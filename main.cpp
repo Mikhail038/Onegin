@@ -36,12 +36,12 @@ int main ()
     while (i < str_num)
     {
 
-        while ((sym = getc (InputFile)) != '\n')
-        {
-            sym_cnt++;
-        }
+       // while ((sym = getc (InputFile)) != '\n')
+        //{
+        //    sym_cnt++;
+        //}
 
-        fseek (InputFile, -(sym_cnt + 1), SEEK_CUR);
+        //fseek (InputFile, -(sym_cnt + 1), SEEK_CUR);
 
         if (getstring (InputFile, &PtrArr[i], 700) != '\n')
         {
